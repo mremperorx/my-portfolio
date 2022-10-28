@@ -32,11 +32,13 @@ function App() {
  
   return (
     <>
-    <button type="button" onClick={handleThemeSwitch} className="fixed z-10 right-4 top-5 bg-gray-800 text-lg p-1 rounded-md">
+    <button type="button" onClick={handleThemeSwitch} className="fixed z-10 right-4 top-5 dark:bg-gray-900 text-lg p-1 rounded-md">
       {theme === 'dark' ? '🌙' : '🌞'}
     </button>
     
-    <div className="font-inter bg-white dark:bg-gradient-to-b from-black to-gray-800">
+    <div className="font-inter gap-y-8 flex-col justify-center items-center 
+      transition-colors duration-2000
+      dark:bg-gray-900 dark:text-white">
       <NavBar />
       <br />
       <Home />

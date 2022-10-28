@@ -9,21 +9,27 @@ const Projects = () => {
     {
       id: 1,
       src: MovieProject,
+      source: "https://github.com/mremperorx/PopcornMovie",
+      liveCode: "https://silly-licorice-b13426.netlify.app",
     },
     {
       id: 2,
       src: WeratherProject,
+      source: "https://github.com/mremperorx/WeatherAPI",
+      liveCode: "https://gilded-malasada-bf6ab3.netlify.app",
     },
     {
       id: 3,
       src: StorePageWithCart,
+      source: "https://github.com/mremperorx/shopping-cart",
+      liveCode: "https://sparkly-sfogliatella-f11cab.netlify.app",
     },
   ];
 
   return (
     <div
       name="projects"
-      className=" w-full text-gray-600 md:h-screen"
+      className=" w-full md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -34,7 +40,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {project.map(({ id, src}) => (
+          {project.map(({ id, src, source, liveCode}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -43,10 +49,10 @@ const Projects = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
+                 <a href={source}>Code</a> 
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                  <a href={liveCode}>Demo</a>
                 </button>
               </div>
             </div>

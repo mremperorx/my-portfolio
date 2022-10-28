@@ -9,6 +9,7 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import Bootstrap from "../assets/Bootstrap.png"
 import TypeScript from "../assets/typescript.png"
+
 const Experience = () => {
   const techs = [
     {
@@ -45,7 +46,7 @@ const Experience = () => {
       id: 6,
       src: Vite,
       title: "Vite",
-      style: "shadow-white",
+      style: "shadow-blue-800",
     },
     {
       id: 7,
@@ -57,19 +58,19 @@ const Experience = () => {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "shadow-black",
     },
     {
       id: 9,
       src: Bootstrap,
       title: "Bootstrap",
-      style: "shadow-gray-400",
+      style: "shadow-purple-400",
     },
     {
       id: 10,
       src: TypeScript,
       title: "TypeScript",
-      style: "shadow-gray-400",
+      style: "shadow-blue-400",
     },
   ];
 
@@ -78,7 +79,7 @@ const Experience = () => {
       name="experience"
       className=" w-full h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-600">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
