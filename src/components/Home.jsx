@@ -17,8 +17,7 @@ const Home = () => {
             I'm a Front-End Developer
           </h2>
           <p className="py-4 max-w-md">
-             I'm currently learning Front-End at IT-School.
-             I love to work on web application using technologies like
+            I love to work on web application using technologies like
             React, Tailwind, NodeJs and Vite.
           </p>
 
@@ -45,7 +44,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>  
+    </div>
   );
 };
 

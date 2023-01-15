@@ -11,17 +11,17 @@ function App() {
   const [theme, setTheme] = useState(null)
 
   useEffect(() => {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark')
-    }else{
+    } else {
       setTheme('light')
     }
   }, [])
 
   useEffect(() => {
-    if(theme === 'dark'){
+    if (theme === 'dark') {
       document.documentElement.classList.add('dark')
-    }else{
+    } else {
       document.documentElement.classList.remove('dark')
     }
   })
@@ -29,27 +29,27 @@ function App() {
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
- 
+
   return (
     <>
-    <button type="button" onClick={handleThemeSwitch} className="fixed z-10 right-4 top-5 dark:bg-gray-900 text-lg p-1 rounded-md">
-      {theme === 'dark' ? '🌙' : '🌞'}
-    </button>
-    
-    <div className="font-inter gap-y-8 flex-col justify-center items-center 
+      <button type="button" onClick={handleThemeSwitch} className="fixed z-10 right-4 top-5 dark:bg-gray-900 text-lg p-1 rounded-md">
+        {theme === 'dark' ? '🌙' : '🌞'}
+      </button>
+
+      <div className="font-inter gap-y-8 flex-col justify-center items-center 
       transition-colors duration-2000
       dark:bg-gray-900 dark:text-white">
-      <NavBar />
-      <br />
-      <Home />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <SocialLinks />
-    </div>
+        <NavBar />
+        <br />
+        <Home />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+        <SocialLinks />
+      </div>
     </>
-  ); 
+  );
 }
 
 export default App;

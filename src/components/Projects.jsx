@@ -21,7 +21,7 @@ const Projects = () => {
     {
       id: 3,
       src: StorePageWithCart,
-      source: "https://github.com/mremperorx/shopping-cart",
+      source: "https://victorious-store.netlify.app",
       liveCode: "https://sparkly-sfogliatella-f11cab.netlify.app",
     },
   ];
@@ -40,7 +40,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {project.map(({ id, src, source, liveCode}) => (
+          {project.map(({ id, src, source, liveCode }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -49,7 +49,7 @@ const Projects = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                 <a href={source}>Code</a> 
+                  <a href={source}>Code</a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a href={liveCode}>Demo</a>
